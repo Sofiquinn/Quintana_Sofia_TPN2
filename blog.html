@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Ecos Arquitectura</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-barra">
+            <div class="nav-contenedor">
+                <div class="nav-logo">
+                    <img src="imagenes/logo_blanco.svg" alt="Ecos Arquitectura Logo" class="logo-img">
+                    <span class="logo-texto">ECOS ARQUITECTURA</span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="servicios.html" class="nav-link">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="proyectos.html" class="nav-link">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link activo">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+                
+                <div class="boton-hamburguesa">
+                    <span class="linea-hamburguesa"></span>
+                    <span class="linea-hamburguesa"></span>
+                    <span class="linea-hamburguesa"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-pagina hero-pagina--imagen" style="--hero-img: url('/imagenes/blog.jpg')">
+            <div class="contenedor">
+                <div class="hero-pagina-contenido animar-al-desplazar">
+                    <h1>Blog Arquitectónico</h1>
+                    <p>Ideas, tendencias y reflexiones</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="articulo-destacado">
+            <h2 class="visually-hidden">Artículo destacado</h2>
+            <div class="contenedor">
+                <article class="post-destacado animar-al-desplazar">
+                    <div class="imagen-destacada">
+                        <img src="imagenes/arquitectura_sostenible.jpg" alt="Arquitectura Sostenible" loading="lazy">
+                        <div class="overlay-destacado">
+                            <span class="badge-destacado">Artículo Destacado</span>
+                        </div>
+                    </div>
+                    <div class="contenido-destacado">
+                        <div class="articulo-meta">
+                            <span class="articulo-categoria">Sostenibilidad</span>
+                            <span class="articulo-fecha">23 de Septiembre, 2025</span>
+                        </div>
+                        <h2><a href="articulo.html?id=1">Arquitectura Sostenible</a></h2>
+                        <p>
+                            Exploramos las últimas tendencias en arquitectura sostenible y cómo están
+                            redefiniendo el panorama constructivo mundial. Desde materiales eco-friendly
+                            hasta diseños que minimizan el impacto ambiental.
+                        </p>
+                        <a href="articulo.html?id=1" class="btn-leer-mas">Leer Artículo Completo</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="blog-articulos">
+            <h2 class="visually-hidden">Artículos del blog</h2>
+            <div class="contenedor">
+                <div class="articulos-grid" id="articulosGrid">
+
+                    <article class="articulo-card animar-al-desplazar" data-category="tendencias">
+                        <div class="articulo-imagen">
+                            <img src="imagenes/arquitectura_minimalista.jpg" alt="Minimalismo en Arquitectura" loading="lazy">
+                            <div class="articulo-overlay">
+                                <a href="articulo.html?id=2" class="btn-leer">Leer Más</a>
+                            </div>
+                        </div>
+                        <div class="articulo-contenido">
+                            <div class="articulo-meta">
+                                <span class="articulo-categoria">Tendencias</span>
+                                <span class="articulo-fecha">23 de Septiembre, 2025</span>
+                            </div>
+                            <h3><a href="articulo.html?id=2">El Minimalismo</a></h3>
+                            <p>
+                                El minimalismo arquitectónico evoluciona hacia nuevas formas de expresión que combinan
+                                simplicidad con funcionalidad avanzada.
+                            </p>
+                        </div>
+                    </article>
+                    
+                    <article class="articulo-card animar-al-desplazar" data-category="diseño">
+                        <div class="articulo-imagen">
+                            <img src="imagenes/espacios_pequenos.jpg" alt="Espacios Pequeños" loading="lazy">
+                            <div class="articulo-overlay">
+                                <a href="articulo.html?id=3" class="btn-leer">Leer Más</a>
+                            </div>
+                        </div>
+                        <div class="articulo-contenido">
+                            <div class="articulo-meta">
+                                <span class="articulo-categoria">Diseño</span>
+                                <span class="articulo-fecha">28 de Noviembre, 2024</span>
+                            </div>
+                            <h3><a href="articulo.html?id=3">Maximizando Espacios Pequeños: 10 Estrategias</a></h3>
+                            <p>Técnicas profesionales para hacer que los espacios pequeños se sientan amplios y funcionales.</p>
+                        </div>
+                    </article>
+
+                    <article class="articulo-card animar-al-desplazar" data-category="sostenibilidad">
+                        <div class="articulo-imagen">
+                            <img src="imagenes/materiales_ecologicos.jpg" alt="Materiales Ecológicos" loading="lazy">
+                            <div class="articulo-overlay">
+                                <a href="articulo.html?id=4" class="btn-leer">Leer Más</a>
+                            </div>
+                        </div>
+                        <div class="articulo-contenido">
+                            <div class="articulo-meta">
+                                <span class="articulo-categoria">Sostenibilidad</span>
+                                <span class="articulo-fecha">22 de Noviembre, 2024</span>
+                            </div>
+                            <h3><a href="articulo.html?id=4">Materiales Ecológicos</a></h3>
+                            <p>Una guía completa sobre materiales de construcción sostenibles y su impacto en el futuro arquitectónico.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="footer-contenido">
+                <div class="footer-seccion">
+                    <div class="footer-logo">
+                        <img src="imagenes/logo_blanco.svg" alt="Ecos Arquitectura" loading="lazy">
+                        <span>Ecos Arquitectura</span>
+                    </div>
+                    <p>Llevamos a la realidad tus sueños. Creando espacios únicos e innovadores.</p>
+                </div>
+                
+                <div class="footer-seccion">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="servicios.html">Diseños Personalizados</a></li>
+                        <li><a href="servicios.html">Dirección de Obra</a></li>
+                        <li><a href="servicios.html">Diseño Interior</a></li>
+                        <li><a href="servicios.html">Paisajismo</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-seccion">
+                    <h4>Contacto</h4>
+                    <p>infoecosarquitectura@gmail.com</p>
+                </div>
+                
+                <div class="footer-seccion">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com/ecosarquitectura" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <img src="imagenes/icon_ig.png" alt="" class="social-icon" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-inferior">
+                <p>&copy; 2025 Ecos Arquitectura. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

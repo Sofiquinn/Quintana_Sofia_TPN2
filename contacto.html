@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Ecos Arquitectura</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav-barra">
+      <div class="nav-contenedor">
+        <div class="nav-logo">
+          <img src="imagenes/logo_blanco.svg" alt="Ecos Arquitectura Logo" class="logo-img">
+          <span class="logo-texto">ECOS ARQUITECTURA</span>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="servicios.html" class="nav-link">Servicios</a></li>
+          <li class="nav-item"><a href="proyectos.html" class="nav-link">Proyectos</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="contacto.html" class="nav-link activo">Contacto</a></li>
+        </ul>
+        <div class="boton-hamburguesa">
+          <span class="linea-hamburguesa"></span><span class="linea-hamburguesa"></span><span class="linea-hamburguesa"></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero-pagina hero-pagina--imagen" style="--hero-img: url('/imagenes/contacto.jpg')">
+    <div class="contenedor">
+      <div class="hero-pagina-contenido animar-al-desplazar">
+        <h1>Contacto</h1>
+        <p>Contanos sobre tu proyecto. Te respondemos a la brevedad</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="seccion-contacto">
+    <div class="contenedor">
+      <div class="contacto-grid">
+        <section class="contacto-card animar-al-desplazar">
+          <h2>Escribinos</h2>
+          <p class="contacto-intro">
+            Completá el formulario y te contactamos. Los campos con <span aria-hidden="true">*</span> son obligatorios.
+          </p>
+          <form id="formulario-contacto" novalidate>
+            <div class="fila-formulario">
+              <label for="nombre">Nombre <span class="req">*</span></label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+              <small class="msg-error" id="err-nombre"></small>
+            </div>
+            <div class="fila-formulario">
+              <label for="email">Email <span class="req">*</span></label>
+              <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+              <small class="msg-error" id="err-email"></small>
+            </div>
+            <div class="fila-formulario">
+              <label for="telefono">Teléfono <span class="req">*</span></label>
+              <input type="tel" id="telefono" name="telefono" placeholder="Ej: +54 9 376 468 6785" required>
+              <small class="msg-error" id="err-telefono"></small>
+            </div>
+            <div class="fila-formulario">
+              <label for="mensaje">Mensaje <span class="req">*</span></label>
+              <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contanos sobre tu proyecto" required></textarea>
+              <small class="msg-error" id="err-mensaje"></small>
+            </div>
+
+            <div class="acciones-formulario">
+              <button type="submit" class="btn-primario" id="btn-enviar">Enviar</button>
+              <button type="reset" class="btn-secundario">Limpiar</button>
+            </div>
+
+            <p class="estado-formulario" id="estado-formulario" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+
+        <aside class="contacto-info animar-al-desplazar">
+          <h3>Datos de contacto</h3>
+          <ul class="lista-info">
+            <li><strong>Email:</strong> infoecosarquitectura@gmail.com</li>
+            <li><strong>Instagram:</strong> <a href="https://instagram.com/ecosarquitectura" target="_blank" rel="noopener noreferrer">@ecosarquitectura</a></li>
+          </ul>
+          <p>Atendemos proyectos en distintas ciudades. ¡Hablemos! </p>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <section class="cta-seccion">
+    <div class="contenedor">
+      <div class="cta-contenido animar-al-desplazar">
+        <h2>¿Listo para empezar?</h2>
+        <p>Creamos un espacio que te represente.</p>
+        <div class="cta-botones">
+          <a href="proyectos.html" class="btn-secundario">Ver Proyectos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="footer-contenido">
+        <div class="footer-seccion">
+          <div class="footer-logo">
+            <img src="imagenes/logo_blanco.svg" alt="Ecos Arquitectura" loading="lazy">
+            <span>Ecos Arquitectura</span>
+          </div>
+          <p>Llevamos a la realidad tus sueños. Creando espacios únicos e innovadores.</p>
+        </div>
+        <div class="footer-seccion">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="servicios.html">Diseños Personalizados</a></li>
+            <li><a href="servicios.html">Dirección de Obra</a></li>
+            <li><a href="servicios.html">Diseño Interior</a></li>
+            <li><a href="servicios.html">Paisajismo</a></li>
+          </ul>
+        </div>
+        <div class="footer-seccion">
+          <h4>Contacto</h4>
+          <p>infoecosarquitectura@gmail.com</p>
+        </div>
+        <div class="footer-seccion">
+          <h4>Síguenos</h4>
+          <div class="social-links">
+            <a href="https://instagram.com/ecosarquitectura" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <img src="imagenes/icon_ig.png" alt="" class="social-icon" loading="lazy">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-inferior">
+        <p>&copy; 2025 Ecos Arquitectura. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contacto.js"></script>
+</body>
+</html>

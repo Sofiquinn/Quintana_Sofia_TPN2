@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos - Ecos Arquitectura</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/proyectos.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav-barra">
+      <div class="nav-contenedor">
+        <div class="nav-logo">
+          <img src="imagenes/logo_blanco.svg" alt="Ecos Arquitectura Logo" class="logo-img">
+          <span class="logo-texto">ECOS ARQUITECTURA</span>
+        </div>
+
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="servicios.html" class="nav-link">Servicios</a></li>
+          <li class="nav-item"><a href="proyectos.html" class="nav-link activo">Proyectos</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+
+        <div class="boton-hamburguesa">
+          <span class="linea-hamburguesa"></span>
+          <span class="linea-hamburguesa"></span>
+          <span class="linea-hamburguesa"></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-pagina hero-pagina--imagen" style="--hero-img: url('../imagenes/proyectos.jpg')">
+      <div class="contenedor">
+        <div class="hero-pagina-contenido animar-al-desplazar">
+          <h1>Nuestros Proyectos</h1>
+          <p>Descubrí nuestra galería de trabajos</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="proyectos-filtro">
+      <h2 class="visually-hidden">Filtros de proyectos</h2>
+      <div class="contenedor">
+        <div class="controles-filtro animar-al-desplazar">
+          <button class="btn-filtro activo" data-filter="all">Todos</button>
+          <button class="btn-filtro" data-filter="residencial">Residencial</button>
+          <button class="btn-filtro" data-filter="comercial">Comercial</button>
+          <button class="btn-filtro" data-filter="institucional">Institucional</button>
+          <button class="btn-filtro" data-filter="paisajismo">Paisajismo</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="proyectos-galeria">
+      <h2 class="visually-hidden">Galería de proyectos</h2>
+      <div class="contenedor">
+        <div class="proyectos-mosaico" id="gridProyectos">
+          <!-- Proyecto 1 -->
+          <article class="proyecto-item animar-al-desplazar" data-category="residencial">
+            <div class="proyecto-imagen">
+              <img src="imagenes/casa.jpg" alt="Casa Moderna Minimalista" loading="lazy">
+              <div class="superposicion-proyecto">
+                <div class="proyecto-info">
+                  <a href="proyectos_detalle.html?id=1" class="btn-ver">Ver Proyecto</a>
+                </div>
+              </div>
+            </div>
+            <div class="proyecto-detalles">
+              <span class="proyecto-categoria">Residencial</span>
+              <h3>Casa Moderna Minimalista</h3>
+              <p>Diseño contemporáneo con espacios abiertos que se integran con el jardín.</p>
+              <div class="proyecto-meta">
+                <span>Buenos Aires</span>
+                <span>320m²</span>
+                <span>2023</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 2 -->
+          <article class="proyecto-item animar-al-desplazar" data-category="comercial">
+            <div class="proyecto-imagen">
+              <img src="imagenes/oficina.jpg" alt="Oficinas Corporativas" loading="lazy">
+              <div class="superposicion-proyecto">
+                <div class="proyecto-info">
+                  <a href="proyectos_detalle.html?id=2" class="btn-ver">Ver Proyecto</a>
+                </div>
+              </div>
+            </div>
+            <div class="proyecto-detalles">
+              <span class="proyecto-categoria">Comercial</span>
+              <h3>Oficinas Corporativas</h3>
+              <p>Complejo de oficinas que prioriza el estilo minimalista y el bienestar.</p>
+              <div class="proyecto-meta">
+                <span>Puerto Madero</span>
+                <span>1200m²</span>
+                <span>2024</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 3 -->
+          <article class="proyecto-item animar-al-desplazar" data-category="comercial">
+            <div class="proyecto-imagen">
+              <img src="imagenes/restaurante.jpg" alt="Restaurante" loading="lazy">
+              <div class="superposicion-proyecto">
+                <div class="proyecto-info">
+                  <a href="proyectos_detalle.html?id=3" class="btn-ver">Ver Proyecto</a>
+                </div>
+              </div>
+            </div>
+            <div class="proyecto-detalles">
+              <span class="proyecto-categoria">Comercial</span>
+              <h3>Restaurante</h3>
+              <p>Diseño de interior que combina tradición culinaria con arquitectura innovadora.</p>
+              <div class="proyecto-meta">
+                <span>Palermo</span>
+                <span>250m²</span>
+                <span>2025</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 4 -->
+          <article class="proyecto-item animar-al-desplazar" data-category="paisajismo">
+            <div class="proyecto-imagen">
+              <img src="imagenes/casa_lago.jpg" alt="Casa del Lago" loading="lazy">
+              <div class="superposicion-proyecto">
+                <div class="proyecto-info">
+                  <a href="proyectos_detalle.html?id=4" class="btn-ver">Ver Proyecto</a>
+                </div>
+              </div>
+            </div>
+            <div class="proyecto-detalles">
+              <span class="proyecto-categoria">Paisajismo</span>
+              <h3>Casa del Lago</h3>
+              <p>Transformación de espacio urbano en oasis verde con especies nativas y senderos.</p>
+              <div class="proyecto-meta">
+                <span>Recoleta</span>
+                <span>1500m²</span>
+                <span>2023</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 5 -->
+          <article class="proyecto-item animar-al-desplazar" data-category="comercial">
+            <div class="proyecto-imagen">
+              <img src="imagenes/hotel.jpg" alt="Hotel" loading="lazy">
+              <div class="superposicion-proyecto">
+                <div class="proyecto-info">
+                  <a href="proyectos_detalle.html?id=5" class="btn-ver">Ver Proyecto</a>
+                </div>
+              </div>
+            </div>
+            <div class="proyecto-detalles">
+              <span class="proyecto-categoria">Comercial</span>
+              <h3>Hotel</h3>
+              <p>Renovación completa de edificio convertido en hotel.</p>
+              <div class="proyecto-meta">
+                <span>Córdoba</span>
+                <span>600m²</span>
+                <span>2025</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 6 -->
+          <article class="proyecto-item animar-al-desplazar" data-category="institucional">
+            <div class="proyecto-imagen">
+              <img src="imagenes/biblioteca.jpg" alt="Biblioteca Pública" loading="lazy">
+              <div class="superposicion-proyecto">
+                <div class="proyecto-info">
+                  <a href="proyectos_detalle.html?id=6" class="btn-ver">Ver Proyecto</a>
+                </div>
+              </div>
+            </div>
+            <div class="proyecto-detalles">
+              <span class="proyecto-categoria">Institucional</span>
+              <h3>Biblioteca Pública</h3>
+              <p>Diseño de biblioteca con espacios libres para diferentes actividades educativas.</p>
+              <div class="proyecto-meta">
+                <span>Mendoza</span>
+                <span>400m²</span>
+                <span>2024</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="cta-seccion">
+    <div class="contenedor">
+      <div class="cta-contenido animar-al-desplazar">
+        <h2>¿Querés comenzar un proyecto?</h2>
+        <p>Contactanos para hacer realidad tu visión arquitectónica</p>
+        <div class="cta-botones">
+          <a href="contacto.html" class="btn-primario">Comenzar Proyecto</a>
+          <a href="servicios.html" class="btn-secundario">Ver Servicios</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="footer-contenido">
+        <div class="footer-seccion">
+          <div class="footer-logo">
+            <img src="imagenes/logo_blanco.svg" alt="Ecos Arquitectura" loading="lazy">
+            <span>Ecos Arquitectura</span>
+          </div>
+          <p>Llevamos a la realidad tus sueños. Creando espacios únicos e innovadores.</p>
+        </div>
+
+        <div class="footer-seccion">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="servicios.html">Diseños Personalizados</a></li>
+            <li><a href="servicios.html">Dirección de Obra</a></li>
+            <li><a href="servicios.html">Diseño Interior</a></li>
+            <li><a href="servicios.html">Paisajismo</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-seccion">
+          <h4>Contacto</h4>
+          <p>infoecosarquitectura@gmail.com</p>
+        </div>
+
+        <div class="footer-seccion">
+          <h4>Síguenos</h4>
+          <div class="social-links">
+            <a href="https://instagram.com/ecosarquitectura" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <img src="imagenes/icon_ig.png" alt="" class="social-icon" loading="lazy">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-inferior">
+        <p>&copy; 2025 Ecos Arquitectura. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/proyectos.js"></script>
+</body>
+</html>
