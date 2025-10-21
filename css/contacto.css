@@ -113,8 +113,19 @@ textarea:focus {
   color: var(--secondary-color);
 }
 
+input.error, textarea.error { 
+  outline: 2px solid #ff5a5a; 
+}
+
+.msg-error--visible { 
+  display: inline; 
+  color: #c1121f; 
+  font-size: .85rem; 
+}
+
 @media (max-width: 992px) {
   .contacto-grid {
     grid-template-columns: 1fr;
   }
 }
+
